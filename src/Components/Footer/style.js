@@ -30,7 +30,7 @@ export const Heading = styled.div`
 `;
 export const Row = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 `;
 export const Col = styled.div`
   flex-grow: 0;
@@ -40,6 +40,7 @@ export const Col = styled.div`
 export const Contact =  styled.ul`
   display: flex;
   > li {
+    cursor: pointer;
     padding: 1rem;
     border: 2px solid #eeeeee;
     border-radius: 4px;
