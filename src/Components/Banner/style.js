@@ -2,10 +2,12 @@ import styled from "styled-components";
 import banner_link from "../../assets/banner.png";
 
 export const BannerSection = styled.section`
+  margin-top: 0;
   background: url(${banner_link}) no-repeat;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 65vh;
   padding: 4rem;
+  position: relative;
   &::after {
     content: '';
     background: rgb(0,0,0);
@@ -65,12 +67,13 @@ export const Sunglass = styled.div`
   }
 `;
 export const Info = styled.div`
-  flex: 0 1 55%;
+  flex: 0 1 60%;
   text-align: center;
   text-transform: none;
   h2 {
     margin-top: 3rem;
     line-height: 1.5;
+    font-weight: 600;
   }
   span {
     font-size: 26px;
