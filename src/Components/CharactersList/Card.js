@@ -10,7 +10,7 @@ const Card = ({data}) => {
         <img src={data.character_img} alt={data.name} />
       </ImgWrap>
       <figcaption>
-        <p>{data.details}</p>
+        <p dangerouslySetInnerHTML={{__html: data.details}}></p>
         <Sunglass src={data.sunglass} alt={data.name} />
         <Info>
           <img src={data.brand} alt={data.name} />

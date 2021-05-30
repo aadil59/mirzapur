@@ -15,7 +15,7 @@ const charactersListData = {
     {
       character_img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSikrKnDQ7rQs5D2hpcE0i1HCz3pX_cfjhTdD21Vh5d08HAWE9lPhARx-G46nR508HIJzg&usqp=CAU',
       name: 'Akhandanand Tripathi',
-      details: 'The iron-fisted Akhandanand Tripathi is a millionaire carpet exporter and the mafia don of Mirzapur',
+      details: 'The iron-fisted <span>Akhandanand Tripathi</span> is a millionaire carpet exporter and the mafia don of Mirzapur',
       sunglass: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/sunglass.png',
       brand: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/vincent.png',
       type: 'Golden Green Full Rim'
@@ -23,7 +23,7 @@ const charactersListData = {
     {
       character_img: 'https://im.jdmagicbox.com/comp/jd_social/news/2021jan27/image-1611727678423000-5zmdm0jl61.jpg?clr=',
       name: 'Munna Tripathi',
-      details: "Akhandanand's Son Munna Tripathi is Power hungry and will not stop at anything to inherit his father legacy",
+      details: "Akhandanand's Son <span>Munna Tripathi</span> is Power hungry and will not stop at anything to inherit his father legacy",
       sunglass: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/sunglass.png',
       brand: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/vincent.png',
       type: 'Black Grey Full Rim'
@@ -31,7 +31,7 @@ const charactersListData = {
     {
       character_img: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7fdb28279f6c8aac7e0319dea4e49caaf8a770ae457746b30fc78ca3b54d0bea._RI_V_TTW_.jpg',
       name: 'Maurya Sahab',
-      details: "An honest cop, Maurya Sahab who goes an extra mile to eliminate the bad and the over-powering crime in the city",
+      details: `An honest cop, <span>Maurya Sahab</span> who goes an extra mile to eliminate the bad and the over-powering crime in the city`,
       sunglass: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/sunglass.png',
       brand: 'https://raw.githubusercontent.com/aadil59/mirzapur/main/src/assets/vincent.png',
       type: 'Golden Brown Full Rim'

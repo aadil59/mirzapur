@@ -8,10 +8,19 @@ export const BannerSection = styled.section`
   min-height: 65vh;
   padding: 4rem;
   position: relative;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    min-height: 0;
+    background-position: 70% 0;
+  }
   &::after {
-    content: '';
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    content: "";
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
     position: absolute;
     left: 0;
     right: 0;
@@ -27,12 +36,19 @@ export const Content = styled.div`
   color: #ffffff;
   flex-wrap: wrap;
   z-index: 1;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
   img {
     max-width: 300px;
   }
 `;
 export const Logo = styled.div`
   padding-right: 1rem;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    text-align: center;
+  }
 `;
 export const Streaming = styled.div`
   display: flex;
@@ -42,10 +58,12 @@ export const Streaming = styled.div`
     margin: 0;
     font-weight: 300;
     padding-right: 1rem;
-    &+div {
-        max-width: 140px;
-        padding-left: 1rem;
-        border-left: 3px solid #eee;
+
+    & + div {
+      max-width: 140px;
+      padding-left: 1rem;
+      border-left: 3px solid #eee;
+
       > img {
         mix-blend-mode: multiply;
         width: 100%;
@@ -53,14 +71,19 @@ export const Streaming = styled.div`
     }
   }
   strong {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
-  
 `;
 export const Sunglass = styled.div`
   text-align: center;
   border-left: 1px solid #eee;
   padding-left: 1rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0 0;
+    margin: 1rem 0 0;
+    border-left: 0 none;
+    border-top: 1px solid #eee;
+  }
   p {
     margin-top: 0;
     font-weight: 700;
@@ -74,8 +97,15 @@ export const Info = styled.div`
     margin-top: 3rem;
     line-height: 1.5;
     font-weight: 600;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
   }
   span {
     font-size: 26px;
+    @media screen and (max-width: 768px) {
+      font-size: inherit;
+    }
   }
 `;

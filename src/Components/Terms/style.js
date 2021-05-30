@@ -4,6 +4,9 @@ export const Section = styled.section`
   background-color: #4b4b4b;
   color: #ffffff;
   padding: 4rem;
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  }
   h2 {
     margin-bottom: 2rem;
     &::after {

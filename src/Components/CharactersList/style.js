@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Section = styled.section`
   background-color: #1a1a1a;
   padding: 4rem 4rem 3rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 export const Heading = styled.div`
   color: #ffffff;
@@ -35,22 +38,34 @@ export const CharacterList = styled.div``;
 export const Row = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 export const Col = styled.div`
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 33.33%;
+  @media screen and (max-width: 768px) {
+    flex-basis: 100%;
+  }
 `;
 export const WrapperCard = styled.figure`
   margin-top: 4rem;
   padding: 1rem;
   color: #ffffff;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
   figcaption {
     font-size: 14px;
     font-weight: 600;
     margin: 1rem 0;
     line-height: 1.6;
+    span {
+      color: #f00;
+    }
   }
 `;
 export const ImgWrap = styled.div`
